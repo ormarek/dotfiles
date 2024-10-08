@@ -1,22 +1,22 @@
 -- Keymaps are automatically loaded on the VeryLazy event
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
-local keymap = vim.keymap
-local opts = { noremap = true, silent = true }
-
-keymap.set("n", "x", '"_x')
+-- local keymap = vim.keymap
+-- local opts = { noremap = true, silent = true }
+--
+-- keymap.set("n", "x", '"_x')
 
 -- Increment/decrement
-keymap.set("n", "+", "<C-a>")
-keymap.set("n", "-", "<C-x>")
+-- keymap.set("n", "+", "<C-a>")
+-- keymap.set("n", "-", "<C-x>")
 
 -- Select all
-keymap.set("n", "<C-a>", "gg<S-v>G")
+-- keymap.set("n", "<C-a>", "gg<S-v>G")
 
 -- Save file and quit
 -- keymap.set("n", "<Leader>w", ":update<Return>", opts)
-keymap.set("n", "<Leader>qq", ":quit<Return>", vim.tbl_extend("force", opts, { desc = "Quit" }))
-keymap.set("n", "<Leader>qQ", ":qa<Return>", vim.tbl_extend("force", opts, { desc = "Quit All" }))
+-- keymap.set("n", "<Leader>qq", ":quit<Return>", vim.tbl_extend("force", opts, { desc = "Quit" }))
+-- keymap.set("n", "<Leader>qQ", ":qa<Return>", vim.tbl_extend("force", opts, { desc = "Quit All" }))
 
 -- File explorer with NvimTree
 -- keymap.set("n", "<Leader>f", ":NvimTreeFindFile<Return>", opts)
